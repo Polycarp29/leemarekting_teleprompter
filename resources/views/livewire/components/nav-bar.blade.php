@@ -2,18 +2,33 @@
     <div class="max-w-7xl mx-auto px-6 py-4 flex justify-between items-center">
         <!-- Logo -->
         <div class="text-2xl font-extrabold text-gray-800">
-            <a href="#" class="flex items-center space-x-2">
+            <a href="https://leemarketing.io" class="flex items-center space-x-2">
                 <img src="{{ asset('assets/leemarketing.png') }}" alt="Logo" class="w-full h-15">
             </a>
         </div>
 
         <!-- Desktop Navigation -->
         <ul class="hidden md:flex space-x-8 text-gray-700 font-medium">
-            <li><a href="#" class="hover:text-red-600 transition-colors duration-300">Home</a></li>
-            <li><a href="#" class="hover:text-red-600 transition-colors duration-300">About</a></li>
-            <li><a href="#" class="hover:text-red-600 transition-colors duration-300">Pricing</a></li>
-            <li><a href="#" class="hover:text-red-600 transition-colors duration-300">FAQs</a></li>
+            <li>
+                <a href="{{ route('home.page') }}"
+                    class="{{ request()->routeIs('home.page') ? 'text-red-600 font-semibold' : 'hover:text-red-600 transition-colors duration-300' }}">
+                    Home
+                </a>
+            </li>
+            <li>
+                <a href="{{ route('about.page') }}"
+                    class="{{ request()->routeIs('about.page') ? 'text-red-600 font-semibold' : 'hover:text-red-600 transition-colors duration-300' }}">
+                    About
+                </a>
+            </li>
+            <li>
+                <a href="#"
+                    class="{{ request()->is('faqs') ? 'text-red-600 font-semibold' : 'hover:text-red-600 transition-colors duration-300' }}">
+                    FAQs
+                </a>
+            </li>
         </ul>
+
 
         <!-- CTA Button -->
         <div class="hidden md:flex">
