@@ -18,6 +18,8 @@
     <!-- AOS JS -->
     <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
 
+     <link rel="icon" href="https://leemarketing.io/storage/images/mics/favicon/01JGPHKR4XED8STH6JXRZ0JE1M.webp" type="image/x-icon">
+
 
 
 </head>
